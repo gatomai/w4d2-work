@@ -1,4 +1,4 @@
-// USAGE - node add_person.js Barack Obama 1961-08-04
+// node show_person.js Paul
 
 const pg = require("pg");
 
@@ -25,12 +25,10 @@ function closeConnection() {
     knex.destroy();
 }
 
-knex('famous_people')
-    .insert({ first_name: process.argv[2] ,
-              last_name: process.argv[3] ,
-              birthdate :   process.argv[4]    
-})
-.then( function (result) {
-    closeConnection();
-    // res.json({ success: true, message: 'ok' });     // respond back to request
- })
+knex.select(['first_name', 'last_name', 'birthdate']).from('famous_people')
+    .where('first_name', '=', process.argv[2])
+    .asCallback(function (err, rows) {
+        if (err) return console.error(err);
+        printrows(rows);
+        closeConnection();
+    });
