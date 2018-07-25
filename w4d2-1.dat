@@ -1,0 +1,428 @@
+    1  cd /vagrant/
+    2  ls -lrt
+    3  cd w1d6
+    4  ls -lrt
+    5  vagrant box list
+    6  git config --global user.email 'sai.gautam@gmail.com'
+    7  git config --global user.name 'Sai Gautam'
+    8  cd ~/.ssh
+    9  ls -al
+   10  eval `ssh-agent -s`
+   11  ssh-keygen -t rsa -C "sai.gautam@gmail.com"
+   12  ssh-add ~/.ssh/id_rsa
+   13  cat ~/.ssh/id_rsa.pub
+   14  cd
+   15  pwd
+   16  cd w1d6
+   17  ls -lrt
+   18  pwd
+   19  ls -lrt
+   20  exit
+   21  ls -lrt
+   22  cd w1d6
+   23  ls -lrt
+   24  vi file.js 
+   25  git add .
+   26  git commit -m "Testing GIT after update"
+   27  git push
+   28  pwd
+   29  ls -lrt
+   30  cd ..
+   31  ls -lrt
+   32  cd node-blog/
+   33  ls -lrt
+   34  git status
+   35  vi app.js
+   36  git add .
+   37  git commit -m "Testing GIT"
+   38  git push
+   39  exit
+   40  ls -lrt
+   41  mkdir w02d1
+   42  ls -lrt
+   43  cd w02d1
+   44  ls -lrt
+   45  cd ..
+   46  mkdir httpnode
+   47  cd httpnode/
+   48  ls -lrt
+   49  node print-chunks.js 
+   50  ls -lrt
+   51  node sample.js
+   52  node print-chunks.js 
+   53  curl https://sytantris.github.io/http-examples/step1.html
+   54  node print-chunks.js 
+   55  clear
+   56  node print-chunks.js 
+   57  git add .
+   58  git init
+   59  git add README.md
+   60  echo "# httpnode" >> README.md
+   61  git add README.md
+   62  git commit -m "First Exercise - Print in Chunks"
+   63  git remote add origin git@github.com:gatomai/httpnode.git
+   64  git push -u origin master
+   65  node print-chunks-append.js 
+   66  clear
+   67  node print-chunks-append.js 
+   68  clear
+   69  git add .
+   70  git status
+   71  git commit -m "Printed the full chunk to string"
+   72  git push
+   73  node print-chunks-append-parmtrs.js 
+   74  git add .
+   75  git commit -m "Added parameters to the function so far"
+   76  git push
+   77  ls -lrt
+   78  node print-chunks-append-parmtrs-cllbk.js
+   79  git add .
+   80  git commit -m "Added the callback function to th program"
+   81  git push
+   82  node test-http-functions.js 
+   83  git add .
+   84  git commit -m "Wrote a test wrapper for the http-functions.js"
+   85  git push
+   86  mkdir callbacks
+   87  cd callbacks/
+   88  touch print_uppercase.js, print_lowercase.js, print_reverse.js
+   89  ls -lrt
+   90  mv print_uppercase.js, print_uppercase.js
+   91  mv print_lowercase.js, print_lowercase.js
+   92  ls -lrt
+   93  cp ../http-functions.js .
+   94  node print_uppercase.js 
+   95  node print_lowercase.js 
+   96  node print_reverse.js 
+   97  cd ..
+   98  pwd
+   99  ls -lrt
+  100  mkdir reqpkg
+  101  cd reqpkg/
+  102  ls -lrt
+  103  git init
+  104  npm init
+  105  npm install request --save
+  106  touch sample.js
+  107  nde sample.js 
+  108  node var request = require('request');
+  109  request('https://sytantris.github.io/http-examples/', function(err, response, body) {
+  110  node sample.js 
+  111  node sampl2.js 
+  112  ls -lrt
+  113  time
+  114  date
+  115  vi downloaded.html 
+  116  ls -lrt
+  117  node download-image.js
+  118  ls -lrt
+  119  node download-image.js
+  120  ls -lrt
+  121  nodemon express_server.js 
+  122  cd w2d2/TinyApp/
+  123  ls -lrt
+  124  git branch feature/user-registration
+  125  git show branch
+  126  git show-branch
+  127  git checkout feature/user-registration
+  128  git show-branch
+  129  ls -lrt
+  130  ls -lart
+  131  git add .
+  132  git commit -m "Added all the features for User Registration Assignment"
+  133  git show-branch
+  134  git push
+  135  git push --set-upstream origin feature/user-registration
+  136  git checkout master
+  137  git show-branch
+  138  git merge origin/feature/user-registration
+  139  git add .
+  140  git commit -m "Updated notes"
+  141  git push
+  142  git add .
+  143  git commit -m "Added a middleware logger/debugger"
+  144  git push
+  145  git branch feature/specific-features
+  146  git show-branch
+  147  git checkout feature/specific-features
+  148  git show-branch
+  149  node
+  150  exit
+  151  ls -lrt
+  152  nodemon express_server.js 
+  153  git add .
+  154  ls -lrt
+  155  git commit -m "Fixed more bugs related to edit URLS and Login"
+  156  git push
+  157  ls -lrt
+  158  vi package.json 
+  159  cd node_modules/
+  160  ls -lrt
+  161  cd ..
+  162  ls -lrt
+  163  vi package.json 
+  164  npm install express --save
+  165  pwd
+  166  ls -lrt
+  167  ls node_modules/
+  168  ls node_modules/express/
+  169  cd ..
+  170  cd TinyApp
+  171  vi package.json 
+  172  nodemon express_server.js 
+  173  cd ..
+  174  ls -lrt
+  175  cd ..
+  176  ls -lrt
+  177  cd w2d2
+  178  cd TinyApp
+  179  ls -lrt
+  180  nodemon express_server.js 
+  181  cd ..
+  182  ls -lrt
+  183  cd TA
+  184  ls -lrt
+  185  cd TinyApp-firstbeta/
+  186  ls
+  187  cd TinyApp/
+  188  ls -lrt
+  189  node express_server.js 
+  190  pwd
+  191  cd ../../../
+  192  pwd
+  193  ls -lrt
+  194  cd TinyApp
+  195  ls -lrt
+  196  nodemon express_server.js 
+  197  nodemon express_server.js
+  198  clear
+  199  pwd
+  200  ls -lrt
+  201  nodemon express_server.js 
+  202  git add .
+  203  git commit -m "Fixed bug related to addition of new url for new and existing user"
+  204  git push
+  205  git show-branch
+  206  git add .
+  207  git commit -m "Updated Screenshot link"
+  208  git push
+  209  git checkout master
+  210  git merge origin/feature/specific-features
+  211  git show-branch
+  212  git add .
+  213  git checkout feature/specific-features
+  214  git push --set-upstream origin feature/specific-features
+  215  git checkout 
+  216  git show-branch
+  217  git branch specific-features
+  218  git push 
+  219  git checkout specific-features
+  220  git push
+  221  git push --set-upstream origin specific-features
+  222  git checkout master
+  223  git merge origin/feature/specific-features
+  224  git show-branch
+  225  git add .
+  226  git commit -m "Updated all links to screenshots in README.md"
+  227  git push 
+  228  git add .
+  229  git commit -m "Added markup text to screenshot"
+  230  git push
+  231  git add .
+  232  git commit -m "Pushed more markup text to screenshots"
+  233  git push
+  234  git add README.md 
+  235  git commit -m "Markup text corrections"
+  236  git push
+  237  git show-branch
+  238  git add own-notes.txt 
+  239  git add .
+  240  git commit -m "Updated Notes"
+  241  git push 
+  242  cd ..
+  243  ls -lrt
+  244  cd w2d5-real-test/
+  245  ls -lrt
+  246  npm run question 3
+  247  ls -lrt
+  248  cd answers/
+  249  ls
+  250  rm q4.js 
+  251  cd ..
+  252  npm run question 4
+  253  npm run question 3
+  254  npm run question 5
+  255  ls -lrt
+  256  vi README.md 
+  257  npm run question 6
+  258  npm run question 5
+  259  exit
+  260  exit
+  261  cd tweeter/
+  262  ls -lrt
+  263  history
+  264  history | head
+  265  history | head -30 
+  266  history | grep node
+  267  history | grep npm
+  268  ls -lrt
+  269  vi README.md 
+  270  npm run local
+  271  exit
+  272  curl
+  273  curl www.example.com
+  274  curl www.google.com
+  275  curl http://example.com/about.html
+  276  curl http://example.com/
+  277  cd tweeter/
+  278  node run local
+  279  npm run local
+  280  exit
+  281  cd tweeter/
+  282  node run local
+  283  car README.md 
+  284  ls -lrt
+  285  cat README.md 
+  286  npm run local
+  287  cd ../w3d3
+  288  ls -lrt
+  289  npm install http-server -g
+  290  http-server 
+  291  exit
+  292  cd w4d1/
+  293  ls -lrt
+  294  psql < navy_schema.sql 
+  295  ls -lrt
+  296  psql < navy_schema.sql 
+  297  psql
+  298  exit
+  299  ls -lrt
+  300  node add_person.js Barack Obama 1961-08-04
+  301  knex migrate:rollback 
+  302  knex migrate:latest 
+  303  knex migrate:rollback 
+  304  knex migrate:latest 
+  305  knex migrate:rollback 
+  306  ls -lrt
+  307  mkdir w4d2
+  308  cd w4d2
+  309  ls -lrt
+  310  psql
+  311  git init
+  312  npm install pg --save
+  313  pw
+  314  pwd
+  315  ls -lrt
+  316  ls -lart
+  317  vi .git
+  318  npm init
+  319  ls -lrt
+  320  npm install pg --save
+  321  ls -lrt
+  322  vi settings.json
+  323  cat abc > settings.json 
+  324  cat "abc" > settings.json 
+  325  cat "abc"
+  326  echo abc
+  327  echo abc > settings.json 
+  328  cat settings.json 
+  329  vi .gitignore
+  330  ls -lart
+  331  vi .gitignore
+  332  ls node_modules/
+  333  pwd
+  334  ls -lrt
+  335  node test_script.js 
+  336  psql
+  337  node test_script.js 
+  338  node test_script.js Paul
+  339  echo "# w4d2" >> README.md
+  340  git add .
+  341  git remote add origin git@github.com:gatomai/w4d2.git
+  342  git push
+  343  git push -u origin master
+  344  git push --set-upstream origin master
+  345  git status
+  346  pwd
+  347  ls -lrt
+  348  git reset
+  349  vi .gitignore
+  350  git add .
+  351  git status
+  352  git reset
+  353  cd ..
+  354  ls -lrt
+  355  fine ./ .git*
+  356  ls -lart ./w1d5
+  357  ls -lart ./github-avatar-downloader/
+  358  cat ./github-avatar-downloader/.gitignore
+  359  cp ./github-avatar-downloader/.gitignore ./w4d2
+  360  cd ./w4d2
+  361  ls -lart
+  362  vi .gitignore
+  363  git add README.md
+  364  git add .
+  365  git status
+  366  git commit -m "first commit"
+  367  git remote add origin git@github.com:gatomai/w4d2.git
+  368  git push -u origin master
+  369  git remote add origin git@github.com:gatomai/w4d2-work.git
+  370  git remote set-url origin git@github.com:gatomai/w4d2-work.git
+  371  git push
+  372  git remote -v
+  373  git remote set-url origin git@github.com:gatomai/w4d2-work.git
+  374  git push -u origin master
+  375  git push
+  376  vi .gitignore
+  377  git add .
+  378  git push
+  379  npm install knex --save
+  380  psql
+  381  node add_person.js 
+  382  cat add_person.js 
+  383  node add_person.js 
+  384  ls node_modules/
+  385  node add_person.js 
+  386  node add_person.js Paul
+  387  git add .
+  388  git commit -m "Added the KNEX additions "
+  389  git push
+  390  knex init
+  391  node add_person.js Paul
+  392  psql
+  393  node add_person.js Paul
+  394  psql
+  395  node add_person.js Paul
+  396  psql
+  397  node add_person.js Paul
+  398  psql
+  399  node add_person.js Barack Obama 1961-08-04
+  400  psql
+  401  git add .
+  402  git commit -m "Changed KNEX for commit"
+  403  git push
+  404  git pull
+  405  git commit -m "Changed KNEX for commit"
+  406  git push
+  407  knex init
+  408  npm install -g knex
+  409  knex init
+  410  vi ./knexfile.js
+  411  knex migrate:make migration_name
+  412  pwd
+  413  ls -lrt
+  414  cat knexfile.js 
+  415  knex migrate:make migration_name
+  416  ls -lrt
+  417  node show_person.js Paul
+  418  node add_person.js Barack Obama 1961-08-04
+  419  knex migrate:make migration_name
+  420  knex migrate:make create_milestones
+  421  ls -lrt
+  422  vi /vagrant/w4d2/migrations/20180724213851_create_milestones.js
+  423  knex migrate:latest  
+  424  psql
+  425  cd w4d2
+  426  ls -lrt
+  427  history
+  428  history > w4d2-1.dat
